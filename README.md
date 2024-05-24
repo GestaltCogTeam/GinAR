@@ -1,5 +1,5 @@
 # GinAR
-This github repository corresponds to our paper published in KDD 2024(GinAR: An End-To-End Multivariate Time Series Forecasting Model Suitable for Variable Missing).
+This github repository corresponds to our paper accepted by SIGKDD 2024 (GinAR: An End-To-End Multivariate Time Series Forecasting Model Suitable for Variable Missing).
 
 All datasets can be found in this link: https://github.com/ChengqingYu/MTS_dataset
 
