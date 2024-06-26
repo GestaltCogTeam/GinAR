@@ -21,3 +21,14 @@ The following is the meaning of the core hyperparameter:
 - dropout: dropout
 - adj_mx: Adjacency matrix. (Details you can refer to: https://github.com/zezhishao/BasicTS)
 
+If the code is helpful to you, please cite the following paper:
+```bibtex
+@misc{yu2024ginar,
+      title={GinAR: An End-To-End Multivariate Time Series Forecasting Model Suitable for Variable Missing}, 
+      author={Chengqing Yu and Fei Wang and Zezhi Shao and Tangwen Qian and Zhao Zhang and Wei Wei and Yongjun Xu},
+      year={2024},
+      eprint={2405.11333},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
