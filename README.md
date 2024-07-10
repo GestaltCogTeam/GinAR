@@ -5,8 +5,6 @@ All datasets can be found in this link: https://github.com/ChengqingYu/MTS_datas
 
 The main difference between Model 1 and Model 2 lies in the way they use interpolation attention and the composition of weights in the graph convolution within the GinAR cell.
 
-The code for data processing and model training is currently being organized (Since I am currently preparing for the defense of my doctoral proposal report, I will try my best to organize and upload the code in July after completing these matters.). 
-
 The setting of missing variables is introduced in Section 3.1 (Preliminaries) of our paper. We randomly generate M numbers proportionally, and for the input feature X (which consists of N time series, with M being smaller than N), we convert the values of the corresponding M variables among the N variables to zero. Setting missing variables to zero is based on methods discussed in time series imputation-related papers such as GRIN.
 
 
