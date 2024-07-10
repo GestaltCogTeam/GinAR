@@ -29,7 +29,7 @@ class GinAR(nn.Module):
 
     def forward(self, history_data: torch.Tensor, future_data: torch.Tensor, batch_seen: int, epoch: int, train: bool, **kwargs) -> torch.Tensor:
         # Input [B,H,N,C]: B is batch size. N is the number of variables. H is the history length. C is the number of feature.
-        # Output [B,L,N,1]: B is batch size. N is the number of variables. L is the future length
+        # Output [B,L,N]: B is batch size. N is the number of variables. L is the future length
 
         x = history_data.transpose(-3, -1).transpose(-2, -1)
         B,C,L,N = x.shape[0],x.shape[1],x.shape[2],x.shape[3]
@@ -65,5 +65,5 @@ class GinAR(nn.Module):
         ### decoder
         x = self.dropout(self.decoder(final_result))
         x = self.output(x)
-        return x
+        return x.squeeze(-1)
 
