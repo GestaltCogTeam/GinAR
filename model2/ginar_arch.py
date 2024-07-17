@@ -30,7 +30,7 @@ class GinAR(nn.Module):
         self.output = nn.Linear(input_len, out_len)
         self.decode2 = nn.Conv2d(in_channels=layer_num,out_channels=out_len,kernel_size=(1,emb_size), bias=True)
 
-    def forward(self, history_data: torch.Tensor, future_data: torch.Tensor, batch_seen: int, epoch: int, train: bool, **kwargs) -> torch.Tensor:
+    def forward(self, history_data):
         # Input [B,H,N,C]: B is batch size. N is the number of variables. H is the history length. C is the number of feature.
         # Output [B,L,N]: B is batch size. N is the number of variables. L is the future length
 
