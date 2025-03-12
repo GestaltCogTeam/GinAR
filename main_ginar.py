@@ -178,7 +178,7 @@ with torch.no_grad():
     all_pre = 0.0
     all_true = 0.0
     num = 0
-    for data in valid_data:
+    for data in test_data:
         test_feature = data[:, :, :,0:in_size].to(device2)
         test_target = data[:, :, :,-1].to(device2)
         test_pre = my_net(test_feature)
