@@ -27,7 +27,7 @@ def Inverse_normalization(x,max,min):
 ### PEMS-BAY、METR-LA、PeMS04、PeMS08
 data_name = 'PEMS08'
 data_file = "data/" + data_name + "/data.npz"
-raw_data = np.load(data_file,allow_pickle=True)
+raw_data = np.load(data_file)
 
 ### graph
 adj_mx, _ = load_adj("data/" + data_name + "/adj_"  + data_name + ".pkl", "doubletransition")
